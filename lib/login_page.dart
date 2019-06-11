@@ -13,9 +13,29 @@ class _LoginPageState extends State<LoginPage> {
       appBar: AppBar(
         title: Text("Login Page"),
       ),
-      body: Center(
-        child: Text("Login Page body"),
-      ),
+      body: Container(
+        padding: EdgeInsets.all(20.0),
+        child: Column(
+          children: <Widget>[
+            SizedBox(height: 20),
+            Text(
+              'Login Information',
+              style: TextStyle(fontSize: 20),
+            ),
+            SizedBox(height: 20),
+            TextFormField(
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(labelText: "Email Address"),
+            ),
+            TextFormField(
+              obscureText: true,
+              decoration: InputDecoration(labelText: "Password"),
+            ),
+            SizedBox(height: 20),
+            RaisedButton(child: Text("LOGIN"), onPressed: () {}),
+          ],
+        ),
+      )
     );
   }
 
