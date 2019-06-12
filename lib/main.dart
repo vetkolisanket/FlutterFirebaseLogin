@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_firebase_auth/home_page.dart';
 import 'package:simple_firebase_auth/login_page.dart';
 
 void main() => runApp(MyApp());
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: LoginPage(),
+//      home: LoginPage(),
+      home: HomePage(),
     );
   }
 }
